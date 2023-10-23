@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inter.className {
+  position: relative;
+  font-family: Helvetica, Arial;
+}
+
+/* .inter.className::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, #02071D 0%, rgba(2, 7, 29, 0) 100%, rgba(2, 7, 29, 0.6) 100%);
+} */
+
+canvas {
+  display: block;
+  outline: 0;
+}
+
+/* canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  outline: 0;
+  background: linear-gradient(180deg, #02071D 0%, rgba(2, 7, 29, 0) 100%, rgba(2, 7, 29, 0.6) 100%);
+} */
+
+* {
+  /* disable on touch highlights of html elements, especially on mobile! */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
