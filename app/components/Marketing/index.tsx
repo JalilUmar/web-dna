@@ -113,7 +113,7 @@ export default function Marketing() {
 
       <Link href="/features" className="flex items-center justify-center gap-3 hover:translate-y-1 duration-500 mx-auto">
 
-        <div className="text-lg font-normal">{MarketData[1].arrowtext}</div>
+        <div className="text-lg text-gray-500 font-normal">{MarketData[1].arrowtext}</div>
         <div className="">
           {MarketData[1].arrowicon}
         </div>

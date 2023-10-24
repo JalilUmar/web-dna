@@ -1,12 +1,7 @@
-"use client"
-
-import { handleContactUs } from '@/controllers/get-in-touch/get-in-touch'
-import { useRouter } from 'next/navigation'
 import React, { useRef } from 'react'
 
-export default function FormGetInTouch() {
+export default function RequestDemoForm() {
 
-    const router = useRouter()
     const ref = useRef<HTMLFormElement>(null)
 
     return (
@@ -14,7 +9,6 @@ export default function FormGetInTouch() {
             ref={ref}
             action={async (formData: FormData) => {
                 ref.current?.reset()
-                handleContactUs(formData)
             }}
             className="flex flex-col gap-12">
 
@@ -81,8 +75,8 @@ export default function FormGetInTouch() {
             <div className="flex ">
                 <button
                     type="submit"
-                    className="bg-[#f2a900] hover:translate-y-1 duration-500 text-white hover:bg-[hsla(36,100%,47%,1)] p-2 w-[150px] rounded-full ml-auto">
-                    Send message
+                    className="bg-[#f2a900] hover:translate-y-1 duration-500 text-white hover:bg-[hsla(36,100%,47%,1)] py-3 px-4 rounded-full ml-auto">
+                    Request a demo
                 </button>
             </div>
         </form>

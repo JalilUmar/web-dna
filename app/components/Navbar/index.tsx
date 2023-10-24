@@ -4,6 +4,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { usePathname } from "next/navigation";
+import RequestDemo from "../requestDemo/request-a-demo";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -70,11 +71,15 @@ export default function Navbar() {
             <div>
               <Link href="/about" className={textColorClass}> About </Link>
             </div>
-            <div className="bg-[#f2a900] hover:bg-[hsla(36,100%,47%,1)] p-3 rounded-full ">
-              <Link href="/getintouch" className="translate-y-2 transition-all duration-500" >
-                Get in touch
-              </Link>
+            <div>
+              <Link href="/getintouch" className={textColorClass}> Contact </Link>
             </div>
+            {/* <div className="bg-[#f2a900] hover:bg-[hsla(36,100%,47%,1)] p-3 rounded-full ">
+              <Link href="/getintouch" className="translate-y-2 transition-all duration-200 " >
+                Request a demo
+              </Link>
+            </div> */}
+            <RequestDemo />
           </div>
         </div>
         <div onClick={toggleMenu} className="md:hidden">
