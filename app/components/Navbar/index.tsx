@@ -88,7 +88,7 @@ export default function Navbar() {
       </div>
       {/* /// mobile button /// */}
       {isOpen && (
-        <div className="fixed top-20 left-0 w-full h-full bg-black bg-opacity-95 transition-all duration-300">
+        <div className="fixed top-20 left-0 w-full h-full bg-black bg-opacity-95 transition-all duration-300 z-50">
           <div className="flex flex-col pt-10 gap-5 text-[#fff] text-xl p-7">
             <div className="flex gap-3">
               <div className="border-b border-[#A09EA0] py-2 w-full">
@@ -108,9 +108,10 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 href="/getintouch"
               >
-                Get in touch
+                Contact
               </Link>
             </div>
+            <RequestDemo />
           </div>
         </div>
       )}

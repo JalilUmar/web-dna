@@ -7,6 +7,32 @@ export default function GetInTouch() {
   return (
     <div className="w-full container mx-auto">
       <div className="flex flex-col lg:p-14 p-7">
+        <div className="flex flex-col gap-10 text-white mb-[70px]">
+          <div className="text-7xl text-white">Get in touch</div>
+
+          <section className="mt-[20px]">
+            <div className="flex flex-col text-xl ">
+              <div>
+                <p>Terragram AG</p>
+              </div>
+              <div>
+                <p>Bodenacherring 7</p>
+              </div>
+              <div>
+                <p>8303 Bassersdorf</p>
+              </div>
+            </div>
+            <div className="flex flex-col mt-5 text-xl">
+              <div>
+                <p>+41 79 327 83 71</p>
+              </div>
+              <div>
+                <p>contact@terragram.com</p>
+              </div>
+            </div>
+
+          </section>
+        </div>
 
         {/* /// Form start /// */}
         <div className="w-full bg-white pt-24">
@@ -20,7 +46,7 @@ export default function GetInTouch() {
                 <p className="text-lg text-gray-500">
                   Please leave us a message and we will get back to you as soon as possible.
                 </p>
-                <section className="mt-[20px]">
+                {/* <section className="mt-[20px]">
                   <div className="flex flex-col text-xl ">
                     <div>
                       <p>Terragram AG</p>
@@ -41,7 +67,7 @@ export default function GetInTouch() {
                     </div>
                   </div>
 
-                </section>
+                </section> */}
               </div>
             </div>
             <div className="w-full lg:w-8/12">
